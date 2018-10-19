@@ -1,0 +1,26 @@
+<resources>
+
+
+    <string name="vhbutils_http_string_dialog_title_warning_no_connection">Ops</string>
+    <string name="vhbutils_http_string_dialog_message_warning_no_connection">Parece que você está sem internet. Verifique sua conexão e tente novamente.</string>
+    <string name="vhbutils_http_string_dialog_title_slow_connection">Ops</string>
+    <string name="vhbutils_http_string_dialog_message_slow_connection">Sua conexão está lenta. Tente novamente daqui a pouco.</string>
+    <string name="vhbutils_http_error_dialog_title_http_request">Problema</string>
+    <string name="vhbutils_http_error_dialog_message_http_request">Aconteceu um erro inesperado! Por favor, tente novamente mais tarde.</string>
+
+    <string name="vhbutils_name">VhbUtils</string>
+    <string name="vhbutils_const_file_provider_domain">br.com.sistecno.facility.driver.fileprovider</string>
+    <string name="vhbutils_title_warning">Ops</string>
+    <string name="vhbutils_info_warning_message">Você digitou algo errado. Por favor, confira as informações e tente novamente.</string>
+    <string name="vhbutils_title_warning_no_connection">Ops</string>
+    <string name="vhbutils_action_warning_no_connection">CONECTAR</string>
+    <string name="vhbutils_info_warning_no_connection_message">Parece que você está sem internet. Verifique sua conexão e tente novamente.</string>
+    <string name="vhbutils_error_title_http_request">Deu ruim</string>
+    <string name="vhbutils_error_info_http_request_message">Aconteceu um erro inesperado! Por favor, tente novamente mais tarde.</string>
+    <string name="vhbutils_title_slow_connection">Ops</string>
+    <string name="vhbutils_info_slow_connection_message">Sua conexão está lenta. Tente novamente daqui a pouco.</string>
+
+    <string name="vhbutils_action_dialog_neutral">Ok</string>
+
+
+</resources>

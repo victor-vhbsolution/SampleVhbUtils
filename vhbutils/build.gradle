@@ -1,0 +1,73 @@
+apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
+publish {
+
+    def groupProjectID = 'br.com.vhbsolution.utils'
+    def artifactProjectID = 'vhbutils'
+    def publishVersionID = '0.0.1'
+
+    bintrayUser = 'victor-vhbsolution'
+    bintrayKey = '9fcb628e686f16381a289f6db34162cb79031e84'
+
+
+    userOrg = 'vhbsolution'
+    repoName = 'maven-android'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Android library for support the developing.'
+    website = ''
+
+    publishing {
+        publications {
+            customPub(MavenPublication) {
+                groupId groupProjectID
+                artifactId artifactProjectID
+                version publishVersionID
+
+                //don't forget to add bundleRelease
+                //artifact bundleRelease
+
+            }
+        }
+    }
+
+    //Step 3: don't forget to add your custom publication
+    publications = ['customPub']
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.2'
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "0.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+}
